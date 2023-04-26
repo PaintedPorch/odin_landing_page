@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -143,6 +143,7 @@ body {
     height: 20%;
     width: 80%;
     margin-top: 10px;
+    min-width: 200px;
 }
 
 .cards_title_text {
@@ -191,6 +192,39 @@ body {
     height: 20%;
     width: 100%;
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    width: 58%;
+    min-width: 150px;
+    max-width: 700px;
+}
+
+.quote_text {
+    margin: 0;
+    width: 100%;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.quoter {
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+.quoter_text {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .cta_container {
@@ -212,6 +246,9 @@ body {
     .cards {
         margin-top: 10px;
     }
+    .quote_text {
+        font-size: 14px;
+    }
 }
 @media (max-width: 850px) {
     .header_text_sub {
@@ -228,10 +265,47 @@ body {
     .cards {
         margin-top: 5px;
     }
+    .quote_text {
+        font-size: 11px;
+    }
+    .quoter_text {
+        font-size: 10px;
+    }
+    .quote {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .quote_text {
+        font-size: 8px;
+    }
+    .quoter_text {
+        font-size: 7px;
+    }
 }
 
 @media (min-width: 1000px) {
     .header_text_main {
         font-size: 22px;
+    }
+}
+@media (min-width: 1200px) {
+    .quoter {
+        margin-right: 60px;
+    }
+}
+@media (min-width: 1400px) {
+    .quoter {
+        margin-right: 80px;
+    }
+}
+@media (min-width: 1600px) {
+    .quoter {
+        margin-right: 140px;
+    }
+}
+@media (min-width: 1800px) {
+    .quoter {
+        margin-right: 220px;
     }
 }
